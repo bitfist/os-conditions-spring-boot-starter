@@ -14,9 +14,6 @@ Table of contents
   * [@ConditionalOnOperatingSystem](#conditionalonoperatingsystem)
   * [OperatingSystem bean](#operatingsystem-bean)
 * [Dependency](#dependency)
-    * [Kotlin](#kotlin)
-    * [Groovy](#groovy)
-    * [Maven](#maven)
 
 ## Features
 
