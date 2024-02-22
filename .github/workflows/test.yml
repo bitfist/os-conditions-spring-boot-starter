@@ -25,7 +25,11 @@ jobs:
         cache-read-only: false
     # Job
     - name: Test
-      run: ./gradlew test jacocoTestReport
+      run: |
+        git status
+        git diff gradlew.bat
+        ./gradlew test jacocoTestReport
+        git diff gradlew.bat
     - name: Generate JaCoCo Badge
       uses: cicirello/jacoco-badge-generator@v2
       env:
@@ -39,6 +43,8 @@ jobs:
           git config --global user.name 'github_actions'
           git config --global user.email '1898282+github-actions[bot]@users.noreply.github.com>'
           git add $BADGES_FOLDER
+          git status
+          git diff gradlew.bat
           git commit -m "update coverage badge"
           git push
         fi
