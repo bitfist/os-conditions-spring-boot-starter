@@ -7,7 +7,7 @@ plugins {
     `java-library`
     jacoco
     `maven-publish`
-    id("com.github.jmongard.git-semver-plugin") version "0.12.6"
+    id("com.github.jmongard.git-semver-plugin") version "0.12.8"
 }
 
 //region Dependencies
