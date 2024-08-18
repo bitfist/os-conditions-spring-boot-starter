@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     // BOMs
-    implementation(platform("org.springframework.boot:spring-boot-dependencies:3.2.5"))
+    implementation(platform("org.springframework.boot:spring-boot-dependencies:3.3.2"))
 
     // Dependencies
     implementation("org.springframework.boot:spring-boot-autoconfigure")
