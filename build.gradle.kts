@@ -7,7 +7,7 @@ plugins {
     `java-library`
     jacoco
     `maven-publish`
-    id("com.github.jmongard.git-semver-plugin") version "0.12.4"
+    id("com.github.jmongard.git-semver-plugin") version "0.12.10"
 }
 
 //region Dependencies
@@ -18,7 +18,7 @@ repositories {
 
 dependencies {
     // BOMs
-    implementation(platform("org.springframework.boot:spring-boot-dependencies:3.2.3"))
+    implementation(platform("org.springframework.boot:spring-boot-dependencies:3.3.2"))
 
     // Dependencies
     implementation("org.springframework.boot:spring-boot-autoconfigure")
