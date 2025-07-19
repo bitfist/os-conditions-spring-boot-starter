@@ -27,10 +27,12 @@ jobs:
           cache-read-only: false
       # Job
       - name: Run tests
-        run: ./gradlew test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./gradlew test
       - name: Create release tag & changelog
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ./gradlew releaseVersion --no-commit
           git push origin --tags
