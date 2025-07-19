@@ -8,6 +8,8 @@
 
 Spring Boot Operating System Conditions provides `@Conditional`s for OS detection.
 
+---
+
 Table of contents
 =================
 
@@ -17,11 +19,15 @@ Table of contents
   * [OperatingSystem bean](#operatingsystem-bean)
 * [Dependency](#dependency)
 
+---
+
 ## Features
 
 * [Autoconfiguration](src/main/java/io/github/bitfist/springframework/boot/autoconfigure/os/OperatingSystemAutoConfiguration.java)
 * Bean of type [io.github.bitfist.springframework.boot.OperatingSystem](src/main/java/io/github/bitfist/springframework/boot/os/OperatingSystem.java) named `operatingSystem`
 * Conditional [@ConditionalOnOperatingSystem](src/main/java/io/github/bitfist/springframework/boot/autoconfigure/condition/ConditionalOnOperatingSystem.java) annotation
+
+---
 
 ## Usage
 
@@ -45,6 +51,8 @@ public class SomeConfiguration {
     }
 }
 ```
+
+---
 
 ## Dependency
 
