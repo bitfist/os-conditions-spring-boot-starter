@@ -39,6 +39,8 @@ jobs:
           ./gradlew printChangeLog --file $(pwd)/changelog.md
           echo "RELEASE_VERSION=$(git tag --points-at HEAD)" >> $GITHUB_ENV
       - name: Build JAR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./gradlew build jar -x test
       - name: Publish Maven artifacts to GitHub Packages
         env:
