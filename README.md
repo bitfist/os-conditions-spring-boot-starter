@@ -8,6 +8,10 @@
 
 Spring Boot Operating System Conditions provides `@Conditional`s for OS detection.
 
+> [!IMPORTANT]
+> This project uses dependencies provided from GitHub. You therefore need to set your GitHub user `GPR_USER` and
+> personal access token `GPR_TOKEN` in your `~/.gradle/gradle.properties`
+
 ---
 
 Table of contents
